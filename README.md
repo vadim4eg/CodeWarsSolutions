@@ -1,31 +1,4 @@
-How Green Is My Valley?
-https://www.codewars.com/kata/56e3cd1d93c3d940e50006a4/solutions/javascript
+Filter out the geese
+https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/solutions/javascript
 
-
-    
-function makeValley(arr) {
-    // Your code
-    let res = [];
-    arr = arr.sort((a, b) => a-b);
-    if (arr.length % 2=== 0)
-    {
-      for (let i = arr.length - 1; i >= 0; i -= 2)
-        res.push(arr[i]);
-      for (let i = 0; i < arr.length; i += 2)
-        res.push(arr[i]);
-      return res;
-    }
-    else
-    {
-      let mid = arr[0];
-      for (let i = arr.length - 1; i >= 1; i -= 2)
-        res.push(arr[i]);
-      res.push(mid);
-      for (let i = 1; i < arr.length; i += 2)
-        res.push(arr[i]);
-      return res;
-    }
-}
-
-
-
+birds  = birds.filter(item => !geese.includes(item))
