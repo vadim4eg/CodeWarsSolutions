@@ -1,4 +1,6 @@
-Filter out the geese
-https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/solutions/javascript
+Opposite number
+https://www.codewars.com/kata/opposite-number/train/javascript
 
-birds  = birds.filter(item => !geese.includes(item))
+function opposite(number) {
+ return -number
+}
